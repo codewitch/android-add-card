@@ -1,0 +1,25 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light"/>
+
+    <style name="AppBody">
+        <item name="android:background">#eeeeee</item>
+    </style>
+
+    <style name="HeaderText">
+        <item name="android:textColor">#6bc9ec</item>
+        <item name="android:textSize">15dp</item>
+        <item name="android:paddingLeft">12dp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+    </style>
+
+    <style name="SubmitButton">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">#00b5e7</item>
+        <item name="android:textColor">#ffffff</item>
+    </style>
+
+</resources>

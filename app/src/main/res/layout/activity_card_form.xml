@@ -1,0 +1,93 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="top"
+    android:orientation="vertical"
+    android:padding="5dp"
+    style="@style/AppBody">
+
+    <TextView
+        android:id="@+id/question_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/card_form_header"
+        style="@style/HeaderText"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#00b5e7"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="5dp">
+    </View>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/card_number_input"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:maxLength="20"
+            android:hint="@string/card_number_input_hint"
+            android:inputType="number"
+            android:layout_toLeftOf="@+id/card_type_image"/>
+
+        <ImageView
+            android:id="@+id/card_type_image"
+            android:layout_width="55dp"
+            android:layout_height="45dp"
+            android:src="@drawable/bt_generic_card"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/card_type_image"
+        android:layout_marginBottom="5dp">
+
+        <EditText
+            android:id="@+id/exp_month"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:hint="@string/exp_month_hint"
+            android:inputType="number"
+            android:maxLength="2"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/date_separator"
+            android:textSize="20dp"/>
+
+        <EditText
+            android:id="@+id/exp_year"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:hint="@string/exp_year_hint"
+            android:inputType="number"
+            android:maxLength="2"/>
+
+        <EditText
+            android:id="@+id/cvv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:hint="@string/cvv"
+            android:inputType="number"
+            android:maxLength="4"
+            android:layout_marginLeft="10dp"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/submit_button"
+        style="@style/SubmitButton"
+        android:text="@string/submit_button"
+        android:textSize="20dp"
+        android:layout_below="@+id/exp_month"
+        android:layout_margin="5dp"/>
+
+</LinearLayout>

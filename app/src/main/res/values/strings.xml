@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Venmo Interview Challenge</string>
+    <string name="card_form_activity_title">ADD CARD</string>
+    <string name="action_settings">Settings</string>
+    <string name="card_form_header">CARD INFO</string>
+    <string name="submit_button">Submit</string>
+    <string name="card_number_input_hint">Number</string>
+    <string name="exp_month_hint">MM</string>
+    <string name="exp_year_hint">YY</string>
+    <string name="date_separator">/</string>
+    <string name="cvv">CVV</string>
+
+    <!--Card Success and Error Messages-->
+    <string name="card_validation_success">Woohoo! Success!</string>
+    <string name="card_validation_error_exp_date">Oops! Check your expiration date!</string>
+    <string name="card_validation_error_card_number">Please check to see the card number is correct!</string>
+    <string name="card_validation_error_cvv">Check your CVV!</string>
+    <string name="card_validation_error_default">Oops! Please try again.</string>
+
+    <!--Card Types-->
+    <string name="visa">Visa</string>
+    <string name="mastercard">MasterCard</string>
+    <string name="amex">American Express</string>
+    <string name="diners_club">Diners Club</string>
+    <string name="discover">Discover</string>
+    <string name="jcb">JCB</string>
+    <string name="unknown_card">Unknown</string>
+</resources>
